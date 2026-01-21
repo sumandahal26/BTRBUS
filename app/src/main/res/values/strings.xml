@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BTRBUS</string>
+    <string name="Bus">Bus in\n2 Minutes </string>
+
 </resources>
