@@ -5,8 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#376D45"
 
     tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_triangle_left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/top_view"
@@ -27,18 +37,22 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="16dp"
         android:text="@string/Bus"
+        android:textColor="@color/black"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/top_view"
         app:layout_constraintTop_toTopOf="@+id/top_view" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="146dp"
-        android:layout_height="75dp"
+        android:layout_height="0dp"
         android:layout_marginTop="12dp"
+        android:layout_marginBottom="53dp"
         android:src="@drawable/bus_logo"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/top_view" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <GridLayout
         android:id="@+id/gridLayout"
@@ -56,160 +70,217 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            app:cardCornerRadius="15dp"
-            android:layout_columnWeight="1"
+            android:layout_row="0"
             android:layout_rowWeight="1"
-            android:layout_row="1"
             android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            app:cardCornerRadius="15dp"
             app:cardElevation="12dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/home_busnearme"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/busstop" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:layout_gravity="center_horizontal"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"/>
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            app:cardCornerRadius="15dp"
-            android:layout_columnWeight="1"
+            android:layout_row="0"
             android:layout_rowWeight="1"
-            android:layout_row="1"
             android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            app:cardCornerRadius="15dp"
             app:cardElevation="12dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/home_bus_betn_two_stops"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/busstop" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:layout_gravity="center_horizontal"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"/>
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            app:cardCornerRadius="15dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_row="2"
-            android:layout_column="0"
-            app:cardElevation="12dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/busstop" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:layout_gravity="center_horizontal"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:cardCornerRadius="15dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_row="2"
-            android:layout_column="1"
-            app:cardElevation="12dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/busstop" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:layout_gravity="center_horizontal"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:cardCornerRadius="15dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
             android:layout_row="1"
+            android:layout_rowWeight="1"
             android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            app:cardCornerRadius="15dp"
             app:cardElevation="12dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/home_bus_track"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/busstop" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_bus_ticket"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_favour"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_cust_feed"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--
+         this is how we have to ceate each card one by oone
+         in above the above i generated imaegs logo and directly changed the logo
+         but in future we might change that and use thi smethod
+         insert image seperately then then text and customize
+         as the above methods was easy to save time i did that
+              us ethis method
+
+         <androidx.cardview.widget.CardView
+              android:layout_width="150dp"
+              android:layout_height="150dp"
+              app:cardCornerRadius="15dp"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:layout_row="2"
+              android:layout_column="1"
+              app:cardElevation="12dp"
+              android:layout_gravity="center">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+                  <ImageView
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"
+                      android:layout_gravity="center_horizontal"
+                      android:src="@drawable/busstop" />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Home"
+                      android:layout_gravity="center_horizontal"
+                      android:textStyle="bold"
+                      android:textSize="18sp"
+                      android:textColor="@color/black"/>
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+  -->
     </GridLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/languageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxStrokeWidth="0dp"
+        app:endIconMode="dropdown"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginBottom="732dp"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/languageDropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="21dp"
+        android:inputType="none"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
+        android:text="English"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/top_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
