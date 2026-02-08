@@ -25,7 +25,7 @@
         android:background="@drawable/header"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -237,28 +237,22 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/languageLayout"
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:boxBackgroundMode="outline"
-        app:boxCornerRadiusBottomEnd="20dp"
-        app:boxCornerRadiusBottomStart="20dp"
-        app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp"
-        app:boxStrokeWidth="0dp"
-        app:endIconMode="dropdown"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="parent">
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="119dp"
+        tools:ignore="MissingConstraints">
 
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="139dp"
+        android:layout_marginStart="112dp"
         android:layout_marginBottom="732dp"
         android:text="Welcome"
         android:textColor="@color/white"
@@ -271,16 +265,14 @@
         android:id="@+id/languageDropdown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginStart="56dp"
         android:inputType="none"
-        android:paddingHorizontal="12dp"
-        android:paddingVertical="6dp"
+        android:minHeight="68dp"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="30dp"
         android:text="English"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/top_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
