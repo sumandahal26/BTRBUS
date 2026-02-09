@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity() {
                 "Selected: $selectedLanguage",
                 Toast.LENGTH_SHORT
             ).show()
-
             // Later: change app language here
         }
 
