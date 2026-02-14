@@ -3,7 +3,9 @@
     <string name="Bus">Bus in\n2 Minutes </string>
     <string name="open">Open </string>
     <string name="close">Close</string>
-
+    <string name="search">Track By Bus No </string>
+    <string name="route">Track By Route </string>
+    <string name="prov">Track By Bus Provider</string>
 
 
 </resources>

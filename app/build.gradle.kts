@@ -3,7 +3,12 @@ plugins {
     alias(libs.plugins.kotlin.android)
 }
 
+
+
 android {
+    buildFeatures {
+        viewBinding = true
+    }
     namespace = "com.example.btrbus"
     compileSdk = 36
 
